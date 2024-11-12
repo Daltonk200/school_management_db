@@ -61,6 +61,7 @@ const deleteCourse = async (req, res) => {
 
 const getCourses = async (req, res) => {
   try {
+    
     const courses = await coursesModel.find({});
     res.json({ courses: courses });
   } catch (error) {
